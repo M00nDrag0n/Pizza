@@ -7,8 +7,8 @@ function Pizza(){
 console.log();
 
 Pizza.prototype.orderPizza = function() {
-  var sizes= ["#item"+ "name" + "value"];
-  var sauces = [];
+  var size= ["#item"+ "name" + "value"];
+  var sauce = [];
   var toppings = [];
   var total = add(size, sauce, toppings);
     return total;
@@ -18,11 +18,8 @@ console.log(Pizza.prototype.orderPizza);
 
 
 $(document).ready(function() {
-  getInputs("sz", 1);
+  getInputs("formOne", 1);
 
-  getInputs("sc", 1);
-
-  getInputs("tps", 1);
 
 });
 
@@ -55,7 +52,10 @@ function getInputs(inputId, listCount){
 
       var yourOrder = ("#receipt").text(result);
       var yourOrder = "Your order is"+ add(sz, sc, tps) + ".";
+      $("#receipt").show();
+      var yourOrder = $(this).val();
 
+      console.log(yourOrder);
   });
 });
 };
