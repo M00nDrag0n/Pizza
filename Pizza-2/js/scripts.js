@@ -48,12 +48,13 @@ function getInputs(inputId, listCount){
 
     items.forEach(function(item){
       $("#receipt"+inputId).append("<input>"+item+"</input>");
+      console.log(item);
 
 
       var yourOrder = ("#receipt").text(result);
       var yourOrder = "Your order is"+ add(sz, sc, tps) + ".";
       $("#receipt").show();
-      var yourOrder = $(this).val();
+
 
       console.log(yourOrder);
   });
