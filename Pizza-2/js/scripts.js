@@ -3,17 +3,18 @@ function Pizza(){
   this.sauce = sauce,
   this.toppings = toppings,
   this.total= [this.size + this.sauce+ this.toppings];
-
+}
+console.log();
 
 Pizza.prototype.orderPizza = function() {
   var size= [];
   var sauce = [];
   var toppings = [];
-  var total = [size + sauce + toppings];
+  var total = add(size, sauce, toppings);
     return total;
 }
 
-console.log(size);
+
 
 
 $(document).ready(function() {
@@ -25,24 +26,30 @@ $(document).ready(function() {
 
 });
 
-function getInputs(value, listCount){
-  $("#form-" + value).submit(function(event){
+
+function getInputs(inputId, listCount){
+  $("#form-" + inputId).submit(function(event) {
     event.preventDefault();
+
+
 
     var inputNums = [];
     for(var i=1; i<=listCount; i++){
       inputNums.push(i);
     }
 
-    var items=[];
+    var items = [size, sauce, toppings];
     inputNums.forEach(function(num){
-      items.push($("#item"+num+"-"+value).val().toUppercase(0));
+      items.push($("#item"+num+"-"+inputId).val().toUppercase([0]));
     });
 
-    items.add();
+     var add = function(size, sauce, toppings){return size + sauce + toppings;}
+
 
     items.forEach(function(item){
-      $("#receipt"+value).append("<input>"+item+"</input>");
-    });
-    });
-}
+      $("#receipt"+inputId).append("<input>"+item+"</input>");
+
+
+  });
+});
+};
