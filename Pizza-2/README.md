@@ -16,7 +16,7 @@ _This is a project that uses JavaScript and HTML to create a menu for pizza._
 
 ## Setup/Installation Requirements
 
-* _Take this link [  ] and copy paste it into your browser._
+* _Take this link [ https://m00ndrag0n.github.io/Pizza-2/ ] and copy paste it into your browser._
 * _Select items from the list of options involving pizza._
 * _Hit the "Enter!" button._
 * _Prepare to be amazed._
@@ -27,7 +27,7 @@ _This is a project that uses JavaScript and HTML to create a menu for pizza._
 
 ##Known Bugs
 
-_As usual, I cannot get the JavaScript to work, which means the results will not display regardless of the lack of SYNTAX errors and seemingly everything being in the right spot._
+_As usual, I cannot get the JavaScript to work, which means the results will not display regardless of the lack of SYNTAX errors and seemingly everything being in the right spot. Also there is a submodule that was somehow added that I am unable to get rid of, which is probably why this link does not work._
 
 ## Support and contact details
 
