@@ -27,7 +27,7 @@ _This is a project that uses JavaScript and HTML to create a menu for pizza._
 
 ##Known Bugs
 
-_There are no known bugs in this program._
+_As usual, I cannot get the JavaScript to work, which means the results will not display regardless of the lack of SYNTAX errors and seemingly everything being in the right spot._
 
 ## Support and contact details
 
