@@ -34,6 +34,9 @@ function getInputs(inputId, listCount){
     var inputNums = [];
     for(var i=1; i<=listCount; i++){
       inputNums.push(i);
+      $("input:checkbox:checked").each(function(){
+
+      })
     }
 
     var items = [size, sauce, toppings];
